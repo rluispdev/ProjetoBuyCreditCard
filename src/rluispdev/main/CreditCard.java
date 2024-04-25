@@ -14,6 +14,16 @@ public class CreditCard {
         this.buys = new ArrayList<>();
     }
 
+    public boolean launchBuy(Buy buy){
+        if(this.balance > buy.getValue()){
+            this.balance -= buy.getValue();
+            this.buys.add(buy);
+            return true;
+        }
+        return false;
+    }
+
+
     public double getLimit() {
         return limit;
     }
