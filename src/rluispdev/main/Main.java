@@ -1,5 +1,6 @@
 package rluispdev.main;
 
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -27,8 +28,12 @@ public class Main {
                 System.out.println("Digite [0] - para SAIR ou [1] -  para continuar.");
                 exit = 0;
             }
-
-
         }
+
+        System.out.println("_________________________________");
+        System.out.println("Compras Realizadas/n");
+
+        Collections.sort(card.getBuys());
+
     }
 }
