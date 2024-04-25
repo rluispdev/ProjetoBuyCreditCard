@@ -10,6 +10,17 @@ public class Main {
         double limit = read.nextDouble();
         CreditCard card = new CreditCard(limit);
 
+        int exit = 1;
+        while (exit !=0) {
+
+            System.out.println("Digite a descrição da compra: ");
+            String description = read.next();
+
+            System.out.println("Digite o valor da compra: ");
+            double value = read.nextDouble();
+
+        }
+
 
 
 
