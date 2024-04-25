@@ -15,7 +15,11 @@ public class Main {
         while (exit !=0) {
 
             System.out.println("Digite a descrição da compra: ");
-            String description = read.next();
+            String description = read.nextLine();
+
+            while (description.isEmpty()){
+                description = read.nextLine();
+            }
 
             System.out.println("Digite o valor da compra: ");
             double value = read.nextDouble();
