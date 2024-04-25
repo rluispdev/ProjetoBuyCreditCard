@@ -1,6 +1,6 @@
 package rluispdev.main;
 
-public class Buy {
+public class Buy implements  Comparable<Buy> {
 
     private String description;
     private double value;
@@ -22,5 +22,10 @@ public class Buy {
     public String toString() {
         return  "Compra: descrição = " + description +
                 "valor = " + value;
+    }
+
+    @Override
+    public int compareTo(Buy otherBuy) {
+        return  Double.valueOf(this.value).compareTo(Double.valueOf(otherBuy.value));
     }
 }
