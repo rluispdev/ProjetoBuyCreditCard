@@ -26,6 +26,9 @@ public class Main {
             if (buySucess) {
                 System.out.println("Compra realizada");
                 System.out.println("Digite [0] - para SAIR ou [1] -  para continuar.");
+                exit = read.nextInt();
+            }else {
+                System.out.println("Saldo insuficiente!");
                 exit = 0;
             }
         }
