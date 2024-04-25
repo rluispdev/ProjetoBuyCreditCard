@@ -19,11 +19,16 @@ public class Main {
             System.out.println("Digite o valor da compra: ");
             double value = read.nextDouble();
 
+            Buy buy = new Buy(description, value);
+            boolean buySucess = card.launchBuy(buy);
+
+            if (buySucess) {
+                System.out.println("Compra realizada");
+                System.out.println("Digite [0] - para SAIR ou [1] -  para continuar.");
+                exit = 0;
+            }
+
+
         }
-
-
-
-
-
     }
 }
