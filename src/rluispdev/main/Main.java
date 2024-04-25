@@ -34,6 +34,11 @@ public class Main {
         System.out.println("Compras Realizadas/n");
 
         Collections.sort(card.getBuys());
+        for (Buy itemBuyied : card.getBuys()){
+            System.out.println(itemBuyied.getDescription() + " - " + itemBuyied.getValue());
+        }
+        System.out.println("\n_________________________________");
+        System.out.println("\nSaldo do cartão: " + card.getBalance());
 
     }
 }
